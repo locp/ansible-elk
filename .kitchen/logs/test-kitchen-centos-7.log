@@ -1,0 +1,138 @@
+I, [2018-01-06T10:46:28.437325 #5440]  INFO -- test-kitchen-centos-7: -----> Converging <test-kitchen-centos-7>...
+I, [2018-01-06T10:46:28.438587 #5440]  INFO -- test-kitchen-centos-7: Preparing files for transfer
+D, [2018-01-06T10:46:28.438644 #5440] DEBUG -- test-kitchen-centos-7: Creating local sandbox in /var/folders/vy/d4bt1sx11h13gd7r64k6ch080000gn/T/test-kitchen-centos-7-sandbox-20180106-5440-1ulw1kx
+D, [2018-01-06T10:46:28.438683 #5440] DEBUG -- test-kitchen-centos-7: Creating local sandbox in /var/folders/vy/d4bt1sx11h13gd7r64k6ch080000gn/T/test-kitchen-centos-7-sandbox-20180106-5440-1ulw1kx
+I, [2018-01-06T10:46:28.438717 #5440]  INFO -- test-kitchen-centos-7: Preparing playbook
+D, [2018-01-06T10:46:28.438786 #5440] DEBUG -- test-kitchen-centos-7: Copying playbook from test.yml to /var/folders/vy/d4bt1sx11h13gd7r64k6ch080000gn/T/test-kitchen-centos-7-sandbox-20180106-5440-1ulw1kx/test.yml
+I, [2018-01-06T10:46:28.440187 #5440]  INFO -- test-kitchen-centos-7: Preparing inventory
+D, [2018-01-06T10:46:28.440337 #5440] DEBUG -- test-kitchen-centos-7: Copying inventory directory from test/inventory to /var/folders/vy/d4bt1sx11h13gd7r64k6ch080000gn/T/test-kitchen-centos-7-sandbox-20180106-5440-1ulw1kx/inventory
+I, [2018-01-06T10:46:28.443267 #5440]  INFO -- test-kitchen-centos-7: Preparing modules
+I, [2018-01-06T10:46:28.443481 #5440]  INFO -- test-kitchen-centos-7: nothing to do for modules
+I, [2018-01-06T10:46:28.443527 #5440]  INFO -- test-kitchen-centos-7: Preparing roles
+D, [2018-01-06T10:46:28.443615 #5440] DEBUG -- test-kitchen-centos-7: Using roles from /Users/ben.dalling/workspace/locp/ansible-elk
+I, [2018-01-06T10:46:28.481897 #5440]  INFO -- test-kitchen-centos-7: Preparing ansible.cfg file
+I, [2018-01-06T10:46:28.482124 #5440]  INFO -- test-kitchen-centos-7: Empty ansible.cfg generated
+I, [2018-01-06T10:46:28.482410 #5440]  INFO -- test-kitchen-centos-7: Preparing group_vars
+I, [2018-01-06T10:46:28.482653 #5440]  INFO -- test-kitchen-centos-7: nothing to do for group_vars
+I, [2018-01-06T10:46:28.482700 #5440]  INFO -- test-kitchen-centos-7: Preparing additional_copy_path
+I, [2018-01-06T10:46:28.482760 #5440]  INFO -- test-kitchen-centos-7: Copy additional path: elk
+D, [2018-01-06T10:46:28.483015 #5440] DEBUG -- test-kitchen-centos-7: Copy dir: /Users/ben.dalling/workspace/locp/ansible-elk/elk /var/folders/vy/d4bt1sx11h13gd7r64k6ch080000gn/T/test-kitchen-centos-7-sandbox-20180106-5440-1ulw1kx/elk
+I, [2018-01-06T10:46:28.493336 #5440]  INFO -- test-kitchen-centos-7: Preparing host_vars
+I, [2018-01-06T10:46:28.493546 #5440]  INFO -- test-kitchen-centos-7: nothing to do for host_vars
+I, [2018-01-06T10:46:28.493608 #5440]  INFO -- test-kitchen-centos-7: Preparing spec
+I, [2018-01-06T10:46:28.493751 #5440]  INFO -- test-kitchen-centos-7: nothing to do for spec
+I, [2018-01-06T10:46:28.493820 #5440]  INFO -- test-kitchen-centos-7: Preparing library plugins
+I, [2018-01-06T10:46:28.494096 #5440]  INFO -- test-kitchen-centos-7: nothing to do for library plugins
+I, [2018-01-06T10:46:28.494149 #5440]  INFO -- test-kitchen-centos-7: Preparing callback plugins
+I, [2018-01-06T10:46:28.494415 #5440]  INFO -- test-kitchen-centos-7: nothing to do for callback plugins
+I, [2018-01-06T10:46:28.494488 #5440]  INFO -- test-kitchen-centos-7: Preparing filter_plugins
+I, [2018-01-06T10:46:28.494774 #5440]  INFO -- test-kitchen-centos-7: nothing to do for filter_plugins
+I, [2018-01-06T10:46:28.494831 #5440]  INFO -- test-kitchen-centos-7: Preparing lookup_plugins
+I, [2018-01-06T10:46:28.495077 #5440]  INFO -- test-kitchen-centos-7: nothing to do for lookup_plugins
+I, [2018-01-06T10:46:28.495220 #5440]  INFO -- test-kitchen-centos-7: Preparing ansible vault password
+I, [2018-01-06T10:46:28.495371 #5440]  INFO -- test-kitchen-centos-7: Preparing additional_ssh_private_keys
+I, [2018-01-06T10:46:28.495501 #5440]  INFO -- test-kitchen-centos-7: nothing to do for additional_ssh_private_keys
+I, [2018-01-06T10:46:28.495546 #5440]  INFO -- test-kitchen-centos-7: Finished Preparing files for transfer
+D, [2018-01-06T10:46:28.497211 #5440] DEBUG -- test-kitchen-centos-7: sudo -E rm -rf /tmp/kitchen/modules /tmp/kitchen/roles /tmp/kitchen/group_vars /tmp/kitchen/host_vars; mkdir -p /tmp/kitchen
+D, [2018-01-06T10:46:28.497318 #5440] DEBUG -- test-kitchen-centos-7: [SSH] kitchen@localhost<{:user_known_hosts_file=>"/dev/null", :port=>32800, :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["test/id_rsa"], :auth_methods=>["publickey"], :verify_host_key=>false}> (sudo -E rm -rf /tmp/kitchen/modules /tmp/kitchen/roles /tmp/kitchen/group_vars /tmp/kitchen/host_vars; mkdir -p /tmp/kitchen)
+D, [2018-01-06T10:46:28.497392 #5440] DEBUG -- test-kitchen-centos-7: [SSH] opening connection to kitchen@localhost<{:user_known_hosts_file=>"/dev/null", :port=>32800, :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["test/id_rsa"], :auth_methods=>["publickey"], :verify_host_key=>false}>
+I, [2018-01-06T10:48:28.427269 #5440]  INFO -- test-kitchen-centos-7: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::Disconnect: connection closed by remote host>)
+D, [2018-01-06T10:48:29.434761 #5440] DEBUG -- test-kitchen-centos-7: [SSH] opening connection to kitchen@localhost<{:user_known_hosts_file=>"/dev/null", :port=>32800, :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["test/id_rsa"], :auth_methods=>["publickey"], :verify_host_key=>false, :logger=>#<Logger:0x007f8f6fcb58a8 @level=4, @progname=nil, @default_formatter=#<Logger::Formatter:0x007f8f6fcb5858 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8f6fcb57e0 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<IO:<STDERR>>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8f6fcb5790>>>, :password_prompt=>#<Net::SSH::Prompt:0x007f8f6fcb5768>, :user=>"kitchen"}>
+I, [2018-01-06T10:48:29.555064 #5440]  INFO -- test-kitchen-centos-7: Transferring files to <test-kitchen-centos-7>
+D, [2018-01-06T10:48:29.555202 #5440] DEBUG -- test-kitchen-centos-7: TIMING: scp async upload (Kitchen::Transport::Ssh)
+D, [2018-01-06T10:48:29.870019 #5440] DEBUG -- test-kitchen-centos-7: TIMING: scp async upload (Kitchen::Transport::Ssh) took (0m0.31s)
+D, [2018-01-06T10:48:29.870112 #5440] DEBUG -- test-kitchen-centos-7: Transfer complete
+D, [2018-01-06T10:48:29.871614 #5440] DEBUG -- test-kitchen-centos-7: *** COMMAND TO RUN:
+D, [2018-01-06T10:48:29.871693 #5440] DEBUG -- test-kitchen-centos-7: sudo -E sh -c '[ -d /etc/ansible ] || mkdir /etc/ansible' && sudo -E cp /tmp/kitchen/ansible.cfg /etc/ansible && sudo -E cp -r /tmp/kitchen/group_vars /etc/ansible/. && sudo -E cp -r /tmp/kitchen/host_vars /etc/ansible/.
+D, [2018-01-06T10:48:29.871791 #5440] DEBUG -- test-kitchen-centos-7: [SSH] kitchen@localhost<{:user_known_hosts_file=>"/dev/null", :port=>32800, :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["test/id_rsa"], :auth_methods=>["publickey"], :verify_host_key=>false, :logger=>#<Logger:0x007f8f6fcb58a8 @level=4, @progname=nil, @default_formatter=#<Logger::Formatter:0x007f8f6fcb5858 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8f6fcb57e0 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<IO:<STDERR>>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8f6fcb5790>>>, :password_prompt=>#<Net::SSH::Prompt:0x007f8f6fcb5768>, :user=>"kitchen"}> (sudo -E sh -c '[ -d /etc/ansible ] || mkdir /etc/ansible' && sudo -E cp /tmp/kitchen/ansible.cfg /etc/ansible && sudo -E cp -r /tmp/kitchen/group_vars /etc/ansible/. && sudo -E cp -r /tmp/kitchen/host_vars /etc/ansible/.)
+D, [2018-01-06T10:48:29.911429 #5440] DEBUG -- test-kitchen-centos-7: Setting roles_path inside VM to /tmp/kitchen/roles
+D, [2018-01-06T10:48:29.911594 #5440] DEBUG -- test-kitchen-centos-7: Setting roles_path inside VM to /tmp/kitchen/roles
+D, [2018-01-06T10:48:29.911848 #5440] DEBUG -- test-kitchen-centos-7: test-kitchen-centos-7
+D, [2018-01-06T10:48:29.912680 #5440] DEBUG -- test-kitchen-centos-7: Going to invoke ansible-playbook with:           
+          
+          ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml && (echo 'Going to invoke ansible-playbook second time:'; ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml | tee /tmp/idempotency_test.txt; grep -q 'changed=0.*failed=0' /tmp/idempotency_test.txt && (echo 'Idempotence test: PASS' && exit 0) || (echo 'Idempotence test: FAIL' && exit 1))
+
+D, [2018-01-06T10:48:29.912797 #5440] DEBUG -- test-kitchen-centos-7: Attempting to execute command - try 1 of 1.
+D, [2018-01-06T10:48:29.912996 #5440] DEBUG -- test-kitchen-centos-7: [SSH] kitchen@localhost<{:user_known_hosts_file=>"/dev/null", :port=>32800, :compression=>false, :compression_level=>0, :keepalive=>true, :keepalive_interval=>60, :timeout=>15, :keys_only=>true, :keys=>["test/id_rsa"], :auth_methods=>["publickey"], :verify_host_key=>false, :logger=>#<Logger:0x007f8f6fcb58a8 @level=4, @progname=nil, @default_formatter=#<Logger::Formatter:0x007f8f6fcb5858 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8f6fcb57e0 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<IO:<STDERR>>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8f6fcb5790>>>, :password_prompt=>#<Net::SSH::Prompt:0x007f8f6fcb5768>, :user=>"kitchen"}> (          
+          
+          ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml && (echo 'Going to invoke ansible-playbook second time:'; ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml | tee /tmp/idempotency_test.txt; grep -q 'changed=0.*failed=0' /tmp/idempotency_test.txt && (echo 'Idempotence test: PASS' && exit 0) || (echo 'Idempotence test: FAIL' && exit 1))
+)
+I, [2018-01-06T10:48:30.402166 #5440]  INFO -- test-kitchen-centos-7: [0;34mansible-playbook 2.4.2.0[0m
+I, [2018-01-06T10:48:30.404416 #5440]  INFO -- test-kitchen-centos-7: [0;34m  config file = /etc/ansible/ansible.cfg[0m
+I, [2018-01-06T10:48:30.404650 #5440]  INFO -- test-kitchen-centos-7: [0;34m  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules'][0m
+I, [2018-01-06T10:48:30.404797 #5440]  INFO -- test-kitchen-centos-7: [0;34m  ansible python module location = /usr/lib/python2.7/site-packages/ansible[0m
+I, [2018-01-06T10:48:30.404956 #5440]  INFO -- test-kitchen-centos-7: [0;34m  executable location = /bin/ansible-playbook[0m
+I, [2018-01-06T10:48:30.405094 #5440]  INFO -- test-kitchen-centos-7: [0;34m  python version = 2.7.5 (default, Aug  4 2017, 00:39:18) [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)][0m
+I, [2018-01-06T10:48:30.405222 #5440]  INFO -- test-kitchen-centos-7: [0;34mUsing /etc/ansible/ansible.cfg as config file[0m
+I, [2018-01-06T10:48:30.408379 #5440]  INFO -- test-kitchen-centos-7: [0;34mParsed /tmp/kitchen/inventory/hosts inventory source with ini plugin[0m
+I, [2018-01-06T10:48:30.611283 #5440]  INFO -- test-kitchen-centos-7: 
+I, [2018-01-06T10:48:30.611651 #5440]  INFO -- test-kitchen-centos-7: PLAYBOOK: test.yml *************************************************************
+I, [2018-01-06T10:48:30.611828 #5440]  INFO -- test-kitchen-centos-7: [0;34m1 plays in /tmp/kitchen/test.yml[0m
+I, [2018-01-06T10:48:30.629045 #5440]  INFO -- test-kitchen-centos-7: 
+I, [2018-01-06T10:48:30.629307 #5440]  INFO -- test-kitchen-centos-7: PLAY [Test playbook for the elk role.] *****************************************
+I, [2018-01-06T10:48:30.637736 #5440]  INFO -- test-kitchen-centos-7: 
+I, [2018-01-06T10:48:30.637951 #5440]  INFO -- test-kitchen-centos-7: TASK [Gathering Facts] *********************************************************
+I, [2018-01-06T10:48:30.886186 #5440]  INFO -- test-kitchen-centos-7: [0;34mUsing module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py[0m
+I, [2018-01-06T10:48:30.886506 #5440]  INFO -- test-kitchen-centos-7: [0;34m<localhost> ESTABLISH SSH CONNECTION FOR USER: None[0m
+I, [2018-01-06T10:48:30.887447 #5440]  INFO -- test-kitchen-centos-7: [0;34m<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/8a5a4c6a60 localhost '/bin/sh -c '"'"'echo ~ && sleep 0'"'"''[0m
+I, [2018-01-06T10:48:30.956161 #5440]  INFO -- test-kitchen-centos-7: [0;34m<localhost> (255, '', 'Permission denied (publickey,password).\r\n')[0m
+I, [2018-01-06T10:48:30.959998 #5440]  INFO -- test-kitchen-centos-7: [1;31mfatal: [localhost]: UNREACHABLE! => {[0m
+I, [2018-01-06T10:48:30.960435 #5440]  INFO -- test-kitchen-centos-7: [1;31m    "changed": false, [0m
+I, [2018-01-06T10:48:30.960754 #5440]  INFO -- test-kitchen-centos-7: [1;31m    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).\r\n", [0m
+I, [2018-01-06T10:48:30.960975 #5440]  INFO -- test-kitchen-centos-7: [1;31m    "unreachable": true[0m
+I, [2018-01-06T10:48:30.961294 #5440]  INFO -- test-kitchen-centos-7: [1;31m}[0m
+I, [2018-01-06T10:48:30.963285 #5440]  INFO -- test-kitchen-centos-7: 	to retry, use: --limit @/tmp/kitchen/test.retry
+I, [2018-01-06T10:48:30.963574 #5440]  INFO -- test-kitchen-centos-7: 
+I, [2018-01-06T10:48:30.963853 #5440]  INFO -- test-kitchen-centos-7: PLAY RECAP *********************************************************************
+I, [2018-01-06T10:48:30.964132 #5440]  INFO -- test-kitchen-centos-7: [0;31mlocalhost[0m                  : ok=0    changed=0    [1;31munreachable=1   [0m failed=0   
+I, [2018-01-06T10:48:30.964303 #5440]  INFO -- test-kitchen-centos-7: 
+D, [2018-01-06T10:48:30.991935 #5440] DEBUG -- test-kitchen-centos-7: Cleaning up local sandbox in /var/folders/vy/d4bt1sx11h13gd7r64k6ch080000gn/T/test-kitchen-centos-7-sandbox-20180106-5440-1ulw1kx
+E, [2018-01-06T10:48:31.019470 #5440] ERROR -- test-kitchen-centos-7: Converge failed on instance <test-kitchen-centos-7>.
+E, [2018-01-06T10:48:31.019594 #5440] ERROR -- test-kitchen-centos-7: ------Exception-------
+E, [2018-01-06T10:48:31.019618 #5440] ERROR -- test-kitchen-centos-7: Class: Kitchen::ActionFailed
+E, [2018-01-06T10:48:31.019634 #5440] ERROR -- test-kitchen-centos-7: Message: SSH exited (4) for command: [          
+          
+          ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml && (echo 'Going to invoke ansible-playbook second time:'; ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml | tee /tmp/idempotency_test.txt; grep -q 'changed=0.*failed=0' /tmp/idempotency_test.txt && (echo 'Idempotence test: PASS' && exit 0) || (echo 'Idempotence test: FAIL' && exit 1))
+]
+E, [2018-01-06T10:48:31.019649 #5440] ERROR -- test-kitchen-centos-7: ----------------------
+E, [2018-01-06T10:48:31.019663 #5440] ERROR -- test-kitchen-centos-7: ------Backtrace-------
+E, [2018-01-06T10:48:31.019677 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2018-01-06T10:48:31.019692 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2018-01-06T10:48:31.019723 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-01-06T10:48:31.019738 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-01-06T10:48:31.019753 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-01-06T10:48:31.019767 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-01-06T10:48:31.019781 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
+E, [2018-01-06T10:48:31.019796 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-01-06T10:48:31.019810 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-01-06T10:48:31.019825 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
+E, [2018-01-06T10:48:31.019839 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-01-06T10:48:31.019854 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:135:in `converge'
+E, [2018-01-06T10:48:31.019868 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-01-06T10:48:31.019882 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-01-06T10:48:31.019897 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-01-06T10:48:31.019911 #5440] ERROR -- test-kitchen-centos-7: ----End Backtrace-----
+E, [2018-01-06T10:48:31.019925 #5440] ERROR -- test-kitchen-centos-7: ---Nested Exception---
+E, [2018-01-06T10:48:31.019938 #5440] ERROR -- test-kitchen-centos-7: Class: Kitchen::Transport::SshFailed
+E, [2018-01-06T10:48:31.019952 #5440] ERROR -- test-kitchen-centos-7: Message: SSH exited (4) for command: [          
+          
+          ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml && (echo 'Going to invoke ansible-playbook second time:'; ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml | tee /tmp/idempotency_test.txt; grep -q 'changed=0.*failed=0' /tmp/idempotency_test.txt && (echo 'Idempotence test: PASS' && exit 0) || (echo 'Idempotence test: FAIL' && exit 1))
+]
+E, [2018-01-06T10:48:31.019966 #5440] ERROR -- test-kitchen-centos-7: ----------------------
+E, [2018-01-06T10:48:31.019980 #5440] ERROR -- test-kitchen-centos-7: ------Backtrace-------
+E, [2018-01-06T10:48:31.019993 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2018-01-06T10:48:31.020008 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2018-01-06T10:48:31.020022 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-01-06T10:48:31.020048 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-01-06T10:48:31.020063 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-01-06T10:48:31.020077 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-01-06T10:48:31.020091 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
+E, [2018-01-06T10:48:31.020105 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-01-06T10:48:31.020120 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-01-06T10:48:31.020133 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
+E, [2018-01-06T10:48:31.020147 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-01-06T10:48:31.020161 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:135:in `converge'
+E, [2018-01-06T10:48:31.020175 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-01-06T10:48:31.020189 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-01-06T10:48:31.020203 #5440] ERROR -- test-kitchen-centos-7: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-01-06T10:48:31.020217 #5440] ERROR -- test-kitchen-centos-7: ----End Backtrace-----

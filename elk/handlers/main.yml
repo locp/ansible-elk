@@ -1,0 +1,19 @@
+---
+# handlers file for elk
+- name: restart elasticsearch
+  service:
+    name: elasticsearch
+    state: restarted
+    daemon_reload: yes
+
+- name: restart kibana
+  service:
+    name: kibana
+    state: restarted
+    daemon_reload: yes
+
+- name: restart nginx
+  service:
+    name: nginx
+    state: restarted
+    daemon_reload: yes

@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: test/id_rsa
+image_id: 566cc490456c
+container_id: cefe887830d2c1a4a295ca678915a2eee103ae9f7ef7c2b10bc3f11e46f390f5
+hostname: localhost
+port: 32800
+last_action: create
+last_error: Kitchen::ActionFailed

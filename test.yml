@@ -1,0 +1,6 @@
+---
+- name: Test playbook for the elk role.
+  gather_facts: True
+  hosts: all
+  roles:
+    - elk

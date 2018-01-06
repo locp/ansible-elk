@@ -1,0 +1,74 @@
+I, [2018-01-06T10:46:28.278128 #5440]  INFO -- Kitchen: -----> Starting Kitchen (v1.19.2)
+D, [2018-01-06T10:46:28.309750 #5440] DEBUG -- Kitchen: [local command] BEGIN (docker >> /dev/null 2>&1)
+D, [2018-01-06T10:46:28.369410 #5440] DEBUG -- Kitchen: [local command] END (0m0.04s)
+I, [2018-01-06T10:46:28.437240 #5440]  INFO -- Kitchen: -----> Converging <test-kitchen-centos-7>...
+D, [2018-01-06T10:48:31.023292 #5440] DEBUG -- Kitchen: ------Exception-------
+D, [2018-01-06T10:48:31.023355 #5440] DEBUG -- Kitchen: Class: Kitchen::ActionFailed
+D, [2018-01-06T10:48:31.023403 #5440] DEBUG -- Kitchen: Message: 1 actions failed.
+>>>>>>     Converge failed on instance <test-kitchen-centos-7>.  Please see .kitchen/logs/test-kitchen-centos-7.log for more details
+D, [2018-01-06T10:48:31.023447 #5440] DEBUG -- Kitchen: ----------------------
+D, [2018-01-06T10:48:31.023477 #5440] DEBUG -- Kitchen: ------Backtrace-------
+D, [2018-01-06T10:48:31.023510 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:183:in `report_errors'
+D, [2018-01-06T10:48:31.023542 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:174:in `run_action'
+D, [2018-01-06T10:48:31.023576 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command/action.rb:36:in `block in call'
+D, [2018-01-06T10:48:31.023609 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+D, [2018-01-06T10:48:31.023642 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command/action.rb:34:in `call'
+D, [2018-01-06T10:48:31.023675 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/cli.rb:52:in `perform'
+D, [2018-01-06T10:48:31.023708 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+D, [2018-01-06T10:48:31.023740 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+D, [2018-01-06T10:48:31.023769 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+D, [2018-01-06T10:48:31.023804 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+D, [2018-01-06T10:48:31.023834 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+D, [2018-01-06T10:48:31.023867 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/bin/kitchen:13:in `block in <top (required)>'
+D, [2018-01-06T10:48:31.023920 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+D, [2018-01-06T10:48:31.023953 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/bin/kitchen:13:in `<top (required)>'
+D, [2018-01-06T10:48:31.023983 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/bin/kitchen:23:in `load'
+D, [2018-01-06T10:48:31.024014 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/bin/kitchen:23:in `<main>'
+D, [2018-01-06T10:48:31.024046 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+D, [2018-01-06T10:48:31.024080 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
+D, [2018-01-06T10:48:31.024110 #5440] DEBUG -- Kitchen: ----End Backtrace-----
+D, [2018-01-06T10:48:31.024140 #5440] DEBUG -- Kitchen: -Composite Exception--
+D, [2018-01-06T10:48:31.024170 #5440] DEBUG -- Kitchen: Class: Kitchen::InstanceFailure
+D, [2018-01-06T10:48:31.024200 #5440] DEBUG -- Kitchen: Message: Converge failed on instance <test-kitchen-centos-7>.  Please see .kitchen/logs/test-kitchen-centos-7.log for more details
+D, [2018-01-06T10:48:31.024247 #5440] DEBUG -- Kitchen: ----------------------
+D, [2018-01-06T10:48:31.024272 #5440] DEBUG -- Kitchen: ------Backtrace-------
+D, [2018-01-06T10:48:31.024300 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+D, [2018-01-06T10:48:31.024330 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:86:in `call'
+D, [2018-01-06T10:48:31.024360 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:393:in `block in converge_action'
+D, [2018-01-06T10:48:31.024391 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+D, [2018-01-06T10:48:31.024422 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
+D, [2018-01-06T10:48:31.024450 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+D, [2018-01-06T10:48:31.024480 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
+D, [2018-01-06T10:48:31.024509 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:389:in `converge_action'
+D, [2018-01-06T10:48:31.024537 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+D, [2018-01-06T10:48:31.024567 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
+D, [2018-01-06T10:48:31.024596 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
+D, [2018-01-06T10:48:31.024627 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:135:in `converge'
+D, [2018-01-06T10:48:31.024656 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
+D, [2018-01-06T10:48:31.024685 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+D, [2018-01-06T10:48:31.024716 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+D, [2018-01-06T10:48:31.024787 #5440] DEBUG -- Kitchen: ----End Backtrace-----
+D, [2018-01-06T10:48:31.024869 #5440] DEBUG -- Kitchen: ---Nested Exception---
+D, [2018-01-06T10:48:31.024915 #5440] DEBUG -- Kitchen: Class: Kitchen::ActionFailed
+D, [2018-01-06T10:48:31.024953 #5440] DEBUG -- Kitchen: Message: SSH exited (4) for command: [          
+          
+          ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml && (echo 'Going to invoke ansible-playbook second time:'; ANSIBLE_HOST_KEY_CHECKING=false ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/inventory  -c ssh -M /tmp/kitchen/modules -vvv         /tmp/kitchen/test.yml | tee /tmp/idempotency_test.txt; grep -q 'changed=0.*failed=0' /tmp/idempotency_test.txt && (echo 'Idempotence test: PASS' && exit 0) || (echo 'Idempotence test: FAIL' && exit 1))
+]
+D, [2018-01-06T10:48:31.024996 #5440] DEBUG -- Kitchen: ----------------------
+D, [2018-01-06T10:48:31.025034 #5440] DEBUG -- Kitchen: ------Backtrace-------
+D, [2018-01-06T10:48:31.025071 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+D, [2018-01-06T10:48:31.025258 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/provisioner/base.rb:86:in `call'
+D, [2018-01-06T10:48:31.025333 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:393:in `block in converge_action'
+D, [2018-01-06T10:48:31.025376 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+D, [2018-01-06T10:48:31.025416 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:498:in `block in action'
+D, [2018-01-06T10:48:31.025456 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+D, [2018-01-06T10:48:31.025498 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:497:in `action'
+D, [2018-01-06T10:48:31.025539 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:389:in `converge_action'
+D, [2018-01-06T10:48:31.025582 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+D, [2018-01-06T10:48:31.025611 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `each'
+D, [2018-01-06T10:48:31.025643 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:367:in `transition_to'
+D, [2018-01-06T10:48:31.025674 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/instance.rb:135:in `converge'
+D, [2018-01-06T10:48:31.025705 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `public_send'
+D, [2018-01-06T10:48:31.025733 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+D, [2018-01-06T10:48:31.025764 #5440] DEBUG -- Kitchen: /Users/ben.dalling/.rvm/gems/ruby-2.4.1/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+D, [2018-01-06T10:48:31.025794 #5440] DEBUG -- Kitchen: ----End Backtrace-----

@@ -1,0 +1,61 @@
+---
+# tasks file for elk
+
+- name: Elasticsearch repository
+  yum_repository:
+    name: elasticsearch
+    description: Elasticsearch repository for 6.x packages
+    baseurl: https://artifacts.elastic.co/packages/6.x/yum
+    gpgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    gpgcheck: yes
+
+- name: EPEL repository
+  package:
+    name: epel-release
+
+- name: Packages
+  package:
+    name: "{{ item }}"
+  with_items:
+    - java-1.8.0-openjdk-headless
+    - elasticsearch
+    - kibana
+    - nginx
+
+- name: Updating Elasticsearch config file to restrict outside access
+  lineinfile:
+    destfile: /etc/elasticsearch/elasticsearch.yml
+    regexp: 'network.host:'
+    line: 'network.host: localhost'
+  notify:
+    - restart elasticsearch
+
+- name: Updating Kibana config file to restrict outside access
+  lineinfile:
+    destfile: /etc/kibana/kibana.yml
+    regexp: 'server.host:'
+    line: 'server.host: localhost'
+  notify:
+    - restart kibana
+
+- name: Setup Nginx reverse proxy for kibana
+  template:
+    src=nginx.conf.j2
+    dest=/etc/nginx/nginx.conf
+    owner=root
+    group=root
+    mode=0644
+  notify:
+    - restart nginx
+
+- name: Enable services
+  service:
+    name: "{{ item }}"
+    enabled: yes
+  with_items:
+    - elasticsearch
+    - kibana
+
+- name: Show me the data
+  debug:
+    msg: "{{ hostvars }}"
